@@ -1,16 +1,16 @@
 //  EASY GOING
 // Write a for loop that will log the numbers 1 through 20.
-for (let i = 0; i < 20; i++) {
-    // console.log(i);
-};
+// for (let i = 0; i < 20; i++) {
+//     // console.log(i);
+// };
 
 // GET EVEN
 // Write a for loop that will log only the even numbers in 0 through 200.
-for (let i = 0; i <= 200; i++ ) {
-    if( i % 2 == 0) {
-        // console.log(i);
-    }
-}
+// for (let i = 0; i <= 200; i++ ) {
+//     if( i % 2 == 0) {
+//         // console.log(i);
+//     }
+// }
 
 //GET EVEN
 /*
@@ -22,23 +22,23 @@ for (let i = 0; i <= 200; i++ ) {
 4. If a number is divisible by 3 and 5, log "FizzBuzz" instead of the number.
 */
 
-for(let j=0; j<= 100;j++ ) {
-    if(j % 3 == 0 && j % 5 ==0) {
-    j = 'fizzbuzz';
-    } else if(j % 5 == 0) {
-        j = 'buzz';
-    } else if (j % 3 == 0){
-        j= 'fizz';
-    }
-    // console.log(j);
-}
+// for(let j=0; j<= 100;j++ ) {
+//     if(j % 3 == 0 && j % 5 ==0) {
+//     j = 'fizzbuzz';
+//     } else if(j % 5 == 0) {
+//         j = 'buzz';
+//     } else if (j % 3 == 0){
+//         j= 'fizz';
+//     }
+//     // console.log(j);
+// }
 
 //WILD WILD LIFE
-const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"]
-const sharky = ["Sharky", "shark", 20, "Left Coast"]
-const plantee = ["Plantee", "plant",  5000 , "Mordor"]
-const porgee = ["Porgee", "Porg", 186, "Ahch-To"]
-const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
+// const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"]
+// const sharky = ["Sharky", "shark", 20, "Left Coast"]
+// const plantee = ["Plantee", "plant",  5000 , "Mordor"]
+// const porgee = ["Porgee", "Porg", 186, "Ahch-To"]
+// const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
 // 1. Plantee just had her birthday; change Plantee's array to reflect her being a year older.
 // console.log(plantee[2] + 1);
 
@@ -59,20 +59,20 @@ const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
 */
 
 //1. Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo).
-const ninjaTurtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
+// const ninjaTurtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
 // console.log(ninjaTurtles);
 
 //2. Use a for of loop to call toUpperCase() on each of them and print out the result.
-for (let i = 0; i < ninjaTurtles.length; i++) {
-    // console.log(ninjaTurtles[i].toUpperCase());
-    ninjaTurtles[i] = ninjaTurtles[i].toUpperCase();
-    // return ninjaTurtles[i].toUpperCase();
-}
+// for (let i = 0; i < ninjaTurtles.length; i++) {
+//     // console.log(ninjaTurtles[i].toUpperCase());
+//     ninjaTurtles[i] = ninjaTurtles[i].toUpperCase();
+//     // return ninjaTurtles[i].toUpperCase();
+// }
 // console.log(ninjaTurtles);
 
 //METHODS, REVISTED
-const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 
-'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+// const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 
+// 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 
 //Console log the index of Titanic.
 // console.log(favMovies.indexOf('Titanic'));
@@ -85,7 +85,7 @@ console.log your final results.
 // console.log(favMovies.sort());
 
 //2. Thought Question: What did this do to the array? Did it permanently alter it?
-console.log(favMovies); //Yes.
+// console.log(favMovies); //Yes.
 
 //3. Use the method pop.
 // console.log(favMovies.pop());
@@ -123,11 +123,54 @@ console.log(favMovies); //Yes.
 // console.log(favMovies); //Nope!
 
 //12. Store the value of your slice in a variable and console.log it.
-const slicedArray = favMovies.slice(0, 9);
-console.log(slicedArray);
+// const slicedArray = favMovies.slice(0, 9);
+// console.log(slicedArray);
 
 //13. Thought Question: What is going on here?
 //i don't know 
-console.log(slicedArray); //Array permanently changed!
+// console.log(slicedArray); //Array permanently changed!
 
+//WHERE IS WALDO
+const whereIsWaldo = [
+    ["Timmy", "Frank"], "Eggbert",
+    ["Lucinda", "Jacc", "Neff", "Snoop"],
+    ["Petunia", ["Baked Goods", "Waldo"]]
+];
 
+// console.log(whereIsWaldo);
+
+// 1. Remove Eggbert (hint look at the slice/splice methods).
+//console.log(
+    //     whereIsWaldo.slice(
+        //    whereIsWaldo.indexOf('Eggbert')
+        //  );
+        // console.log(whereIsWaldo);
+        // console.log(whereIsWaldo.slice(1,2));
+        
+        //2. Change "Neff" to "No One".
+        // for (let i = 0; i < whereIsWaldo.length; i++) {
+            //     //console.log(whereIsWaldo[i]);
+            //     //console.log(whereIsWaldo[i].indexOf('Neff'));
+            //     for(let j = 0; j < whereIsWaldo.length; j++){
+                //             // console.log(whereIsWaldo[i][j]);
+                //             if(whereIsWaldo[i][j]==='Neff') {
+                    //                // whereIsWaldo[i][j] == 'No One';
+                    //                 //console.log(whereIsWaldo[i].indexOf(whereIsWaldo[i][j]));
+                    //                 whereIsWaldo[i][j] = 'No One';
+                    //                 console.log(whereIsWaldo[i][j]);
+                    //             }
+                    //     }
+                    // };
+                    // console.log(whereIsWaldo);
+
+//3. Access and console.log "Waldo".
+// for (let i = 0; i < whereIsWaldo.length; i++) {
+//     for(let j = 0; j < whereIsWaldo.length; j++){
+//         for(let k = 0; k <whereIsWaldo.length; k++ ){
+//             console.log(whereIsWaldo[i][j][k]);
+//             // if(whereIsWaldo[i][j][k]==='Waldo') {
+//             //     console.log(whereIsWaldo[i][j][k]);
+//             // }
+//         }
+//     }
+//};
