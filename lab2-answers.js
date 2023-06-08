@@ -69,3 +69,65 @@ for (let i = 0; i < ninjaTurtles.length; i++) {
     // return ninjaTurtles[i].toUpperCase();
 }
 // console.log(ninjaTurtles);
+
+//METHODS, REVISTED
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 
+'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+
+//Console log the index of Titanic.
+// console.log(favMovies.indexOf('Titanic'));
+/*
+9. Thought Question: Did this permanently alter our array?
+console.log your final results.
+*/
+
+//1. Use the .sort method.
+// console.log(favMovies.sort());
+
+//2. Thought Question: What did this do to the array? Did it permanently alter it?
+console.log(favMovies); //Yes.
+
+//3. Use the method pop.
+// console.log(favMovies.pop());
+// console.log(favMovies);
+
+//4. push "Guardians of the Galaxy".
+// favMovies.push("Guardians of the Galaxy");
+// console.log(favMovies);
+
+//5. Reverse the array.
+// favMovies.reverse();
+// console.log(favMovies);
+
+//6. Use the shift method.
+// favMovies.shift();
+// console.log(favMovies);
+
+//7. unshift - what does it return?
+// favMovies.unshift('Narnia');
+// console.log(favMovies);
+
+//8. splice "Django Unchained" and add "Avatar" (try finding the index of "Django Unchained" instead of counting it yourself).
+// console.log(favMovies.indexOf('Django Unchained')); // 15
+// favMovies.splice(15, 1, 'Avatar');
+// console.log(favMovies);
+
+//9. Thought Question: Did this permanently alter our array?
+// console.log(favMovies); // Nope!
+
+//10. slice the last half of the array. (Challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it.)
+// console.log(favMovies.length / 2); // 9
+// console.log(favMovies.slice(0, 9));
+
+//11. Thought Question: Did this permanently alter our array?
+// console.log(favMovies); //Nope!
+
+//12. Store the value of your slice in a variable and console.log it.
+const slicedArray = favMovies.slice(0, 9);
+console.log(slicedArray);
+
+//13. Thought Question: What is going on here?
+//i don't know 
+console.log(slicedArray); //Array permanently changed!
+
+
