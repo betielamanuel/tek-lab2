@@ -197,3 +197,29 @@ const whereIsWaldo = [
 //     //console.log(i);
 //     //console.log("Love me, pet me! HSSSSSS!");
 // }
+
+//FIND THE MEDIAN
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+
+//Find the median number in the following nums array, then console.log that number.
+//Hint: If you check the length of the array divided by two, you might get not get a whole number. In which case, look into Math.floor().
+// console.log(nums.sort());
+// console.log(nums.length/2);//12.5
+// console.log(`Median number: ${nums[12]}`);
+
+//HUNGRY FOR MORE?
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "Per Scholas hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+];
+
+/*
+The remainder of these problems are optional; however, we encourage more practice whenever you have the time for it!
+
+Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript. Use this data to answer the following questions.
+*/
