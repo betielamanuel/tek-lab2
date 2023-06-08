@@ -14,7 +14,7 @@ for (let i = 0; i <= 200; i++ ) {
 
 //GET EVEN
 /*
-This is a classic problem that you should get really comfortable solving. If you've solved it before, try to make it more elegant and shorter.
+
 
 1. Write a Javascript Application that logs all numbers from 1 - 100.
 2. If a number is divisible by 3, log "Fizz" instead of the number.
@@ -53,3 +53,19 @@ const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
 //4. Porgee decides that Wolfy can't be named "Wolfy" anymore. Remove "Wolfy" from the wolfy array and replace it with "Gameboy".
 // wolfy[0] = "Gameboy";
 // console.log(wolfy);
+
+//YELL AT THE NINJA TURTLES
+/*
+*/
+
+//1. Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo).
+const ninjaTurtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
+// console.log(ninjaTurtles);
+
+//2. Use a for of loop to call toUpperCase() on each of them and print out the result.
+for (let i = 0; i < ninjaTurtles.length; i++) {
+    // console.log(ninjaTurtles[i].toUpperCase());
+    ninjaTurtles[i] = ninjaTurtles[i].toUpperCase();
+    // return ninjaTurtles[i].toUpperCase();
+}
+// console.log(ninjaTurtles);
