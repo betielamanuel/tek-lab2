@@ -174,3 +174,26 @@ const whereIsWaldo = [
 //         }
 //     }
 //};
+
+//EXCITED KITTEN
+/*
+*/
+
+//Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
+// for (let i = 1; i <= 20; i++) {
+//     //console.log(i);
+//     console.log("Love me, pet me! HSSSSSS!"); 
+// }
+
+//For every even number in your loop, log "...human... why you taking pictures of me...?", "...the catnip made me do it...", or "...why does the red dot always get away...?" at random.  
+//how do i log three different strings at random while looping 20 times
+// const curiousCat = ['...human... why you taking pictures of me...?', '...the catnip made me do it...', '...why does the red dot always get away...?'];
+// for (let i = 1; i <= 20; i++) {
+//     if(i%2===0) {
+//         console.log(curiousCat[Math.floor(Math.random()*curiousCat.length)]);
+//     } else{
+//         console.log("Love me, pet me! HSSSSSS!")
+//     }
+//     //console.log(i);
+//     //console.log("Love me, pet me! HSSSSSS!");
+// }
