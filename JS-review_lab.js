@@ -342,7 +342,7 @@ const kristynsCloset = [
 // console.log(`Krityn is rocking that ${kristynsCloset[2]}`);
 
 //2. Kristyn just bought some sweet shades! Add "raybans" to her closet after "yellow knit hat".
-console.log(kristynsCloset);
-console.log(kristynsCloset.indexOf('yellow knit hat'));
-kristynsCloset[6] = 'raybans';
-console.log(kristynsCloset);
+// console.log(kristynsCloset);
+// console.log(kristynsCloset.indexOf('yellow knit hat'));
+// kristynsCloset[6] = 'raybans';
+// console.log(kristynsCloset);
