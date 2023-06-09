@@ -115,7 +115,6 @@ class Person {
 Create a Story
 Feel free to update or add methods to automate some of these tasks.
 
-Instantiate a new Person named Timmy.
 Age Timmy five years.
 At this point, Timmy's a little bummed. As a precocious child, he feels he's "seen it all" already. Have him eat five times to improve his mood.
 Now Timmy's a little heavier than he wants to be. Kindergarten's coming up and he wants to look good. Have him exercise five times.
@@ -127,3 +126,5 @@ Age Timmy more 15 years.
 Have Timmy eat twice.
 Have Timmy exercise twice.
 */
+
+//Instantiate a new Person named Timmy.
