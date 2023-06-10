@@ -249,11 +249,11 @@ Use that variable to add Kristyn's lost shoe to Thom's accessories array.
 The commit message should read: "Kristyn's lost shoe found"
 */
 
-const kristynsShoe = kristynsCloset.shift()
+//const kristynsShoe = kristynsCloset.shift()
 // console.log(kristynsShoe);
 
-thomsCloset[2].push(kristynsShoe);
-console.log(thomsCloset);
+// thomsCloset[2].push(kristynsShoe);
+// console.log(thomsCloset);
 
 
 //DRESS UP
@@ -262,6 +262,8 @@ Modify your code to put together three separate outfits for Kristyn and Thom. Pu
 
 The commit message should read: "Kristyn and Thom have their outfits ready for class - array practice"
 */
+
+console.log(`Outfit of the day is ${kristynsCloset[1]} and ${thomsCloset[0][3]} with ${thomsCloset[1][1]}`)
 
 //DIRTY LAUNDRY
 /*
