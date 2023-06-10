@@ -131,11 +131,11 @@ console.log your final results.
 // console.log(slicedArray); //Array permanently changed!
 
 //WHERE IS WALDO
-const whereIsWaldo = [
-    ["Timmy", "Frank"], "Eggbert",
-    ["Lucinda", "Jacc", "Neff", "Snoop"],
-    ["Petunia", ["Baked Goods", "Waldo"]]
-];
+// const whereIsWaldo = [
+//     ["Timmy", "Frank"], "Eggbert",
+//     ["Lucinda", "Jacc", "Neff", "Snoop"],
+//     ["Petunia", ["Baked Goods", "Waldo"]]
+// ];
 
 // console.log(whereIsWaldo);
 
@@ -199,7 +199,7 @@ const whereIsWaldo = [
 // }
 
 //FIND THE MEDIAN
-const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+//const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
 
 //Find the median number in the following nums array, then console.log that number.
 //Hint: If you check the length of the array divided by two, you might get not get a whole number. In which case, look into Math.floor().
@@ -218,8 +218,61 @@ const kristynsCloset = [
     "marshmallow peeps"
 ];
 
-/*
-The remainder of these problems are optional; however, we encourage more practice whenever you have the time for it!
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+    [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+    ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+    ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+    ]
+];
 
-Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript. Use this data to answer the following questions.
+// ALIEN ATTIRE
+/*
+Kristyn's left shoe has traveled through time and space and turned up in Thom's accessories drawer!
+
+Remove Kristyn's shoe from the array and save it to the variable kristynsShoe.
+Use that variable to add Kristyn's lost shoe to Thom's accessories array.
+
+The commit message should read: "Kristyn's lost shoe found"
+*/
+
+const kristynsShoe = kristynsCloset.shift()
+// console.log(kristynsShoe);
+
+thomsCloset[2].push(kristynsShoe);
+console.log(thomsCloset);
+
+
+//DRESS UP
+/*
+Modify your code to put together three separate outfits for Kristyn and Thom. Put the output in a sentence to tell us what we'll be wearing. Mix and match!
+
+The commit message should read: "Kristyn and Thom have their outfits ready for class - array practice"
+*/
+
+//DIRTY LAUNDRY
+/*
+Time to do laundry. Loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
+
+The commit message should read: "Washed dirty laundry"
+*/
+
+//INVENTORY
+/*
+Thom wants to do inventory on his closet. Using bracket notation, log the arrays containing all of Thom's shirts, pants, and accessories.
+
+The commit message should read: "Hungry for More: Complet
 */
