@@ -263,7 +263,7 @@ Modify your code to put together three separate outfits for Kristyn and Thom. Pu
 The commit message should read: "Kristyn and Thom have their outfits ready for class - array practice"
 */
 
-console.log(`Outfit of the day is ${kristynsCloset[1]} and ${thomsCloset[0][3]} with ${thomsCloset[1][1]}`)
+//console.log(`Outfit of the day is ${kristynsCloset[1]} and ${thomsCloset[0][3]} with ${thomsCloset[1][1]}`)
 
 //DIRTY LAUNDRY
 /*
@@ -271,10 +271,20 @@ Time to do laundry. Loop through Kristyn's closet and log the sentence "WHIRR: N
 
 The commit message should read: "Washed dirty laundry"
 */
+for (let i =0;i < kristynsCloset.length;i++) {
+    console.log(`WHIRR: Now washing ${kristynsCloset[i]}`);
+}
 
 //INVENTORY
 /*
 Thom wants to do inventory on his closet. Using bracket notation, log the arrays containing all of Thom's shirts, pants, and accessories.
 
-The commit message should read: "Hungry for More: Complet
+The commit message should read: "Hungry for More: Complete"
 */
+
+// for(let i = 0; i < thomsCloset.length; i++ ) {
+//     //console.log(thomsCloset[i]);
+//     for (let j = 0; j < thomsCloset.length; j++ ) {
+//         console.log(thomsCloset[i][j]);
+//     }
+// }
