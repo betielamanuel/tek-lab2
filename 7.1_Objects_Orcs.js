@@ -201,14 +201,37 @@ const movies = [
 
 //CUSTOM CONSTRUCTORS
 //Our constrctur function can take params which we can use to alter the properties of the object instantiated.
+// class Character {
+//     constructor (name, age, eyes, hair) {
+//     this.legs = 2;
+//     this.arms = 2;
+//     this.name = name;
+//     this.age = age;
+//     this.eyes = eyes;
+//     this.hair = hair;
+//     }
+//     greet (otherCharacter) {
+//     console.log('Hi ' + otherCharacter + '!');
+//     }
+//     smite () {
+//     console.log('I smite thee you vile person!');
+//     }
+// }
+
+// const me = new Character('Cathy the Miraculous', 29, 'brown', 'locs of dark brown');
+// console.log(me);
+
+//CREATING DEFAULT VALUES
 class Character {
-    constructor (name, age, eyes, hair) {
+    constructor (name, age, eyes, hair, lovesCats = false, lovesDogs) {
     this.legs = 2;
     this.arms = 2;
     this.name = name;
     this.age = age;
     this.eyes = eyes;
     this.hair = hair;
+    this.lovesCats = lovesCats;
+    this.lovesDogs = lovesDogs || false;
     }
     greet (otherCharacter) {
     console.log('Hi ' + otherCharacter + '!');
@@ -217,6 +240,7 @@ class Character {
     console.log('I smite thee you vile person!');
     }
 }
-
-const me = new Character('Cathy the Miraculous', 29, 'brown', 'locs of dark brown');
+const you = new Character('Cathy the Miraculous', 29, 'brown', 'locs of dark brown', true, true);
+const me = new Character('Wendel the Wavy', 32, 'brown', 'wavy blonde');
 console.log(me);
+console.log(you);
