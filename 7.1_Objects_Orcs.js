@@ -74,11 +74,11 @@
 //console.log(adventurer.companion.companion.belongings[adventurer.companion.companion.belongings.indexOf('health insurance')]);
 
 //AN ARRAY OF OBJECTS
-const movies = [ 
-    { title: "Tokyo Story" },  
-    { title: "Paul Blart: Mall Cop" }, 
-    { title: "L'Avventura" } 
-];
+// const movies = [ 
+//     { title: "Tokyo Story" },  
+//     { title: "Paul Blart: Mall Cop" }, 
+//     { title: "L'Avventura" } 
+// ];
 
 //referencing objects within array using index
 //console.log(movies[0]);
@@ -389,19 +389,19 @@ Here is our parent class, but what if we have a superhero amongst us that has al
 
 //CREATING A FACTORY
 // a factory generates an object for us
-class Tome {
-    constructor (maker, spellType, serialNum) {
-    this.maker = maker;
-    this.spellType = spellType;
-    this.serialNum = serialNum;
-    }
-    cast () {
-    console.log('Casting a spell!');
-    }
-}
+// class Tome {
+//     constructor (maker, spellType, serialNum) {
+//     this.maker = maker;
+//     this.spellType = spellType;
+//     this.serialNum = serialNum;
+//     }
+//     cast () {
+//     console.log('Casting a spell!');
+//     }
+// }
 
-const fireTome = new Tome('Merlin', 'Fire', 1);
-console.log(fireTome);
+// const fireTome = new Tome('Merlin', 'Fire', 1);
+// console.log(fireTome);
 
 //making a factory class that will make tomes for us
 // class Factory {
@@ -430,12 +430,91 @@ console.log(fireTome);
 
 //STATIC PROPERTIES
 //Sometimes you want to define properties that pertain to the class as a whole, not the instance. This allows us to limit, somewhat, what the user of a class can do.
-class Character {
-    static eyeColors () {
-    return ['blue', 'green', 'brown'];
-    }
-    // rest of class definition here...
-}
+// class Character {
+//     static eyeColors () {
+//     return ['blue', 'green', 'brown'];
+//     }
+//     // rest of class definition here...
+// }
 // more code...
-const superman = new Character('Clark Kent', 30, Character.eyeColors()[0], 'black')
-console.log(superman);
+// const superman = new Character('Clark Kent', 30, Character.eyeColors()[0], 'black')
+// console.log(superman);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//GAME OF OBJECTS AND ORCS
+/*
+Going Forward
+Use the information and examples provided thus far to expand your game of Objects and Orcs!
+
+To give you some ideas of what you could accomplish, try to:
+
+Add class methods to create new actions.
+Add interaction between the objects of classes within your methods (could two Characters trade items?).
+You could, for example, create an Inventories class that includes properties in the form of items and methods like add or remove. Your Characters could then have Inventory objects within their properties, and trade methods that access Inventory.add and Inventory.remove, as an example. Is this the best approach for this functionality? Explore and discover!
+
+The possibilities are nearly endless. If you've run out of time for this lab, feel free to return later and continue your adventure!
+
+const adventurer = {
+	name: "Timothy",
+	hitpoints: 10,
+	belongings: ["sword", "potion", "protein"]
+}
+*/
+
+class Adventurer {
+    constructor (name, userID, abilities, health = '100%', points = 100) {
+        this.name =  name;
+        this.userID = userID;
+        this.abilities = abilities;
+        this.health = health;
+        this.biomes = ["Floating Gardens", "Techno Jungle", "Algae Forest"];
+        this.inventory = ["sword", "potion", "protein"];
+        this.points = points;
+    }
+
+    combat() {
+        console.log("kick");
+        console.log("punch")
+        console.log("grunts");
+        console.log("battle cries");
+        console.log("AGGH! Die you stupid monster");
+        this.health *= 0.8;
+        console.log(`You have ${this.health} health`)
+    }
+
+    explore() {
+        let index = Math.floor(Math.random() * this.biomes.length);
+        console.log(`Welcome ${this.name}, to the ${this.biomes[index]}!`);
+        this.points += 100;
+        console.log(`You earned ${this.points} points`);
+    }
+}
+
+//create an instance of adventurer
+const player1 = new Adventurer("Lara Croft",'laraC12345', ['acrobatic manuever', 'hand-to-hand combat', 'scraling walls', 'solving intricate puzzle']);
+const player2 = new Adventurer('Indiana Jones', 'JonesI12345', ['deciphering cryptic codes', 'quick reflex and dexterity'])
+console.log(player1.combat());
+console.log(player1.explore());
+
+
+//Inheritance
+class Enemy extends Adventurer {
+    challenge() {
+        console.log(`You shall not pass the gates!`)
+        console.log('attack!')
+    }
+}
+
+const orcs = new Enemy("Grommash Hellscream", 'Grom12345',['Man Swirdsnab', 'Tactical leader'] );
+console.log(orcs.challenge());
+//Access belongings
+//console.log(player1.belongings[0]); // Output: sword
+
+//accessing a companion object property
+//console.log(player1.companion.name); //Output: Velma
+
+
+//Add additional classes to handle repetitive objects.
+
+
