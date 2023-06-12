@@ -222,25 +222,220 @@ const movies = [
 // console.log(me);
 
 //CREATING DEFAULT VALUES
-class Character {
-    constructor (name, age, eyes, hair, lovesCats = false, lovesDogs) {
-    this.legs = 2;
-    this.arms = 2;
-    this.name = name;
-    this.age = age;
-    this.eyes = eyes;
-    this.hair = hair;
-    this.lovesCats = lovesCats;
-    this.lovesDogs = lovesDogs || false;
+// class Character {
+//     constructor (name, age, eyes, hair, lovesCats = false, lovesDogs) {
+//     this.legs = 2;
+//     this.arms = 2;
+//     this.name = name;
+//     this.age = age;
+//     this.eyes = eyes;
+//     this.hair = hair;
+//     this.lovesCats = lovesCats;
+//     this.lovesDogs = lovesDogs || false;
+//     }
+//     greet (otherCharacter) {
+//     console.log('Hi ' + otherCharacter + '!');
+//     }
+//     smite () {
+//     console.log('I smite thee you vile person!');
+//     }
+// }
+// const you = new Character('Cathy the Miraculous', 29, 'brown', 'locs of dark brown', true, true);
+// const me = new Character('Wendel the Wavy', 32, 'brown', 'wavy blonde');
+// console.log(me);
+// console.log(you);
+
+//CLASS METHODS
+//We can of course, alter the properties of an instance, after it is created.
+// me.hair = 'supernova red';
+// console.log(me);
+
+//But it's a nice practice to define a method that will alter that for us. This has uses beyond just being "correct" when things get more complex.
+// class Character {
+//     constructor (name, age, eyes, hair, lovesCats = true, lovesDogs) {
+//     this.legs = 2;
+//     this.arms = 2;
+//     this.name = name;
+//     this.age = age;
+//     this.eyes = eyes;
+//     this.hair = hair;
+//     this.lovesCats = lovesCats;
+//     this.lovesDogs = lovesDogs || true;
+//     }
+//     greet (otherCharacter) {
+//     console.log('Hi ' + otherCharacter + '!');
+//     }
+//     setHair (hairColor) {
+//     this.hair = hairColor;
+//     }
+//     smite () {
+//     console.log('I smite thee you vile person!');
+//     }
+// }
+
+// const me = new Character('Wendel the Wavy', 32, 'brown', 'wavy blonde');
+// //console.log(you);
+// const you = new Character('Cathy the Miraculous', 29, 'brown', 'locs of dark brown', true, true);
+// you.setHair('red');
+// console.log(you);
+
+// class Character {
+//     constructor (name, age, eyes, hair, lovesCats = false, lovesDogs) {
+//     this.legs = 2;
+//     this.arms = 2;
+//     this.name = name;
+//     this.age = age;
+//     this.eyes = eyes;
+//     this.hair = hair;
+//     this.lovesCats = lovesCats;
+//     this.lovesDogs = lovesDogs || false;
+//     }
+//     greet (otherCharacter) {
+//     console.log('Hi ' + otherCharacter + '!');
+//     }
+//     classyGreeting (otherClassyCharacter) {
+//     console.log('Greetings ' + otherClassyCharacter.name + '!');
+//     }
+//     setHair (hairColor) {
+//     this.hair = hairColor;
+//     }
+//     smite () {
+//     console.log('I smite thee you vile person!');
+//     }
+// }
+// const you = new Character('Cathy the Miraculous', 29, 'brown', 'locs of dark brown', true, true);
+// const me = new Character('Wendel the Wavy', 32, 'brown', 'wavy blonde');
+
+// me.classyGreeting(you);
+// you.classyGreeting(me);
+
+//INHERITANCE
+/*
+Sometimes we want to have a "parent" class that will have some basic attributes that will be inherited by "child" classes.
+
+Here is our parent class, but what if we have a superhero amongst us that has all our human attributes and more?
+*/
+// class Character {
+//     constructor (name, age, eyes, hair, lovesCats = true, lovesDogs) {
+//     this.legs = 2;
+//     this.arms = 2;
+//     this.name = name;
+//     this.age = age;
+//     this.eyes = eyes;
+//     this.hair = hair;
+//     this.lovesCats = lovesCats;
+//     this.lovesDogs = lovesDogs || true;
+//     }
+//     greet (otherCharacter) {
+//     console.log('Hi ' + otherCharacter + '!');
+//     }
+//     classyGreeting (otherClassyCharacter) {
+//     console.log('Greetings ' + otherClassyCharacter.name + '!');
+//     }
+//     setHair (hairColor) {
+//     this.hair = hairColor;
+//     }
+//     smite () {
+//     console.log('I smite thee you vile person!');
+//     }
+
+// }
+
+
+// const hobbit = new Character('Mr Baggins', 33, 'brown', 'black')
+//console.log(hobbit);
+
+//INHERITANCE
+// class Hobbit extends Character {
+//     steal () {
+//     console.log("Let's get away!");
+//     }
+// }
+
+//const frodo = new Hobbit('Frodo', 30, 'brown', 'black')
+// console.log(frodo);
+// frodo.smite();
+// frodo.steal();
+
+//overriding previous functionality
+// class Hobbit extends Character {
+//     steal () {
+//     console.log("Let's get away!");
+//     }
+//     greet (otherCharacter) {
+//     console.log(`Hello ${otherCharacter}.`);
+//     }
+// }
+
+// const frodo = new Hobbit('Frodo', 30, 'brown', 'black')
+// console.log(frodo.greet('Bob'));
+
+//reference the parent class's methods and extend it's original functionality
+// class Hobbit extends Character {
+//     steal () {
+//     console.log("Let's get away!");
+//     }
+//     greet (otherCharacter) {
+//     console.log(`Hello ${otherCharacter}.`);
+//     }
+//     smite () {
+//     super.smite();//referencing parent's class's methods
+//     this.steal();//referencing local methods
+//     }
+// }
+
+// const frodo = new Hobbit('Frodo', 30, 'brown', 'black')
+// console.log(frodo.smite());
+
+//CREATING A FACTORY
+// a factory generates an object for us
+class Tome {
+    constructor (maker, spellType, serialNum) {
+    this.maker = maker;
+    this.spellType = spellType;
+    this.serialNum = serialNum;
     }
-    greet (otherCharacter) {
-    console.log('Hi ' + otherCharacter + '!');
-    }
-    smite () {
-    console.log('I smite thee you vile person!');
+    cast () {
+    console.log('Casting a spell!');
     }
 }
-const you = new Character('Cathy the Miraculous', 29, 'brown', 'locs of dark brown', true, true);
-const me = new Character('Wendel the Wavy', 32, 'brown', 'wavy blonde');
-console.log(me);
-console.log(you);
+
+const fireTome = new Tome('Merlin', 'Fire', 1);
+console.log(fireTome);
+
+//making a factory class that will make tomes for us
+// class Factory {
+//     constructor (maker) {
+//     this.maker = maker;
+//     this.tomes = [];
+//     }
+
+//     generateTome (spellType) {
+//     const newTome = new Tome(this.maker, spellType, this.tomes.length);
+//     this.tomes.push(newTome);
+//     }
+    
+//     findTome (index) {
+//     return this.tomes[index];
+//     }
+// }
+
+// const merlin = new Factory('Merlin');
+// merlin.generateTome('Fire');
+// merlin.generateTome('Water');
+// merlin.generateTome('Earth');
+// merlin.generateTome('Air');
+// console.log(merlin);
+// console.log(merlin.findTome(0));
+
+//STATIC PROPERTIES
+//Sometimes you want to define properties that pertain to the class as a whole, not the instance. This allows us to limit, somewhat, what the user of a class can do.
+class Character {
+    static eyeColors () {
+    return ['blue', 'green', 'brown'];
+    }
+    // rest of class definition here...
+}
+// more code...
+const superman = new Character('Clark Kent', 30, Character.eyeColors()[0], 'black')
+console.log(superman);
