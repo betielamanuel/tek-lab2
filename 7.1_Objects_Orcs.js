@@ -129,13 +129,94 @@ const movies = [
 // console.log(foo[1][2]); //1,2
 
 //You can store a function in an array:
-const foo = [
-    1,
-    "hi",
-    ()=>{
-        console.log('fun');
-        return 'fun';
-    }
-];
+// const foo = [
+//     1,
+//     "hi",
+//     ()=>{
+//         console.log('fun');
+//         return 'fun';
+//     }
+// ];
+//console.log(foo[2]());
 
-console.log(foo[2]());
+//ADDING CLASSES
+//ADDING METHODS TO CLASS CHARACTER
+// class Character {
+//     greet () {
+//     console.log('Hi!');
+//     }
+// }
+
+// const me = new Character();
+// const you = new Character();
+
+// me.greet();
+// you.greet();
+
+//These methods can, of course, take parameters:
+// class Character {
+//     greet (otherCharacter) {
+//     console.log('Hi ' + otherCharacter + '!');
+//     }
+// }
+// const me = new Character();
+// const you = new Character();
+// me.greet('you');
+// you.greet('me');
+
+//multiple methods
+// class Character {
+//     greet (otherCharacter) {
+//     console.log('Hi ' + otherCharacter + '!');
+//     }
+//     smite () {
+//     console.log('I smite thee you vile person!');
+//     }
+// }
+
+// const me = new Character();
+// const you = new Character();
+// me.greet('bob');
+// me.smite();
+// you.greet('bob');
+// you.smite();
+
+//SETTING PROPERTIES
+// class Character {
+//     constructor () {
+//     this.legs = 2;
+//     this.arms = 2;
+//     this.eyes = 'hazel';
+//     this.hair = 'gray';
+//     }
+//     greet (otherCharacter) {
+//     console.log('Hi ' + otherCharacter + '!');
+//     }
+//     smite () {
+//     console.log('I smite thee you vile person!');
+//     }
+// }
+// const me = new Character();
+// console.log(me);
+
+//CUSTOM CONSTRUCTORS
+//Our constrctur function can take params which we can use to alter the properties of the object instantiated.
+class Character {
+    constructor (name, age, eyes, hair) {
+    this.legs = 2;
+    this.arms = 2;
+    this.name = name;
+    this.age = age;
+    this.eyes = eyes;
+    this.hair = hair;
+    }
+    greet (otherCharacter) {
+    console.log('Hi ' + otherCharacter + '!');
+    }
+    smite () {
+    console.log('I smite thee you vile person!');
+    }
+}
+
+const me = new Character('Cathy the Miraculous', 29, 'brown', 'locs of dark brown');
+console.log(me);
