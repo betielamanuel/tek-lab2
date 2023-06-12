@@ -84,3 +84,70 @@ For example, multiplyArray([2, 4, 5]); would return 40.
 //     return arguments.length;
 // }
 // console.log(numArgs(2,4,5));
+
+//7.
+/*
+Define a function, as a function declaration, reverseString that takes a string, reverses the characters, and returns it. 
+For example, reverseString('rockstar'); would return the string "ratskcor".
+*/
+// function reverseString(str) {
+//     return str.split("").reverse().join("");
+// }
+
+//console.log(reverseString('rockstar'));
+
+//8
+/*
+Define a function, as a function expression, longestStringInArray that takes an array of strings as an argument and returns the length of the longest string.
+*/
+//the function accepts an array.
+//the array contains strings
+//we want the funcion to iterate through each string and count its length 
+//if it finds string longer than longerString
+//finally the function will return the longest string
+// const longestStringInArray = function(arr) {
+//     maxString = [];
+//     longestString = [];
+//     for(let i = 0; i < arr.length; i++) {
+//         longestString.push(arr[i].length);
+//         //console.log(longestString);
+//         for (let j = 0; j < longestString.length; j ++) {
+//             //console.log(longestString[j]);
+//         }
+//         if (arr[i].length > longestString ) {
+//             maxString.push(arr[i]);
+//         }
+//     }
+//     return 'This problem gave me headache so i didn\'t complete it';
+// }
+
+// console.log(longestStringInArray(['one', 'two', 'three', 'four', 'five', 'six']));
+
+//9
+/*
+Define a function, as a function declaration, stringsLongerThan that takes an array of strings and a number as arguments; and returns an array of the strings that are longer than the number passed in. 
+For example, stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3); would return ["hello", "morning"].
+*/
+// function stringsLongerThan(arr, num) {
+//     longerString = []
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i].length > num) {
+//             longerString.push(arr[i]);
+//         }
+//     }
+//     return longerString;
+// }
+// console.log(stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3));
+
+//10
+/*
+Define a function, as a function expression, addList that accepts any quantity of numbers as arguments, adds them together, and returns the resulting sum. 
+Assume all parameters will be numbers. If called with no arguments, return 0 (zero).
+*/
+// sum = 0;
+// const addList = function (num1 = 0, num2 = 0, num3 = 0) {
+//     sum = sum + num1 + num2 + num3;
+//     return sum;
+// }
+
+// console.log(addList(1,2,3));
