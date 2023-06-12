@@ -37,6 +37,24 @@
 //console.log(adventurer.companion.type)
 
 ///OBJECT WITHIN AND OBJECT WITHIN AN OBJECT...
+// const adventurer = {
+// 	name: 'Timothy',
+// 	hitpoints: 10,
+// 	belongings: ["sword", "potion", "Tums"],
+// 	companion: {
+// 		name: "Velma",
+// 		type: "Bat",
+// 		companion: {
+// 			name: "Tim",
+// 			type: "Parasite"
+// 		}  
+// 	}
+// }
+
+//What would you write to console.log Tim's type?
+//console.log(adventurer.companion.companion.type);
+
+//ARRAY WITHIN AN OBJECT WITHIN AN OBJECT WITHIN AN OBJECT...
 const adventurer = {
 	name: 'Timothy',
 	hitpoints: 10,
@@ -46,10 +64,11 @@ const adventurer = {
 		type: "Bat",
 		companion: {
 			name: "Tim",
-			type: "Parasite"
+			type: "Parasite",
+			belongings: ["SCUBA tank", "Rogan josh", "health insurance"]
 		}  
 	}
 }
 
-//What would you write to console.log Tim's type?
-console.log(adventurer.companion.companion.type);
+//What would your write to console.log "health insurance"?
+console.log(adventurer.companion.companion.belongings[adventurer.companion.companion.belongings.indexOf('health insurance')]);
