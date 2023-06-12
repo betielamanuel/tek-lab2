@@ -106,19 +106,13 @@ Define a function, as a function expression, longestStringInArray that takes an 
 //if it finds string longer than longerString
 //finally the function will return the longest string
 // const longestStringInArray = function(arr) {
-//     maxString = [];
-//     longestString = [];
+//     let longestString = '';
 //     for(let i = 0; i < arr.length; i++) {
-//         longestString.push(arr[i].length);
-//         //console.log(longestString);
-//         for (let j = 0; j < longestString.length; j ++) {
-//             //console.log(longestString[j]);
-//         }
-//         if (arr[i].length > longestString ) {
-//             maxString.push(arr[i]);
+//         if(arr[i].length > longestString.length) {
+//             longestString = arr[i];
 //         }
 //     }
-//     return 'This problem gave me headache so i didn\'t complete it';
+//     return longestString;
 // }
 
 // console.log(longestStringInArray(['one', 'two', 'three', 'four', 'five', 'six']));
