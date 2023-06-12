@@ -1,4 +1,4 @@
-// ARRAYS WITHIN OBJECTS
+/// ARRAYS WITHIN OBJECTS
 // const adventurer = {
 // 	name: "Timothy",
 // 	hitpoints: 10,
@@ -16,22 +16,40 @@
 // 	console.log(adventurer.belongings[i]);
 // }
 
-//OBJECT WITHIN AN OBJECT
+///OBJECT WITHIN AN OBJECT
+// const adventurer = {
+// 	name: "Timothy",
+// 	hitpoints: 10,
+// 	belongings: ["sword", "potion", "Tums"],
+// 	companion: {
+// 		name: "Velma",
+// 		type: "Bat"
+// 	}
+// }
+
+//Access the companion object:
+//console.log(adventurer.companion);
+
+//Access the companion's name:
+//console.log(adventurer.companion.name);
+
+//Access the companion's type:
+//console.log(adventurer.companion.type)
+
+///OBJECT WITHIN AND OBJECT WITHIN AN OBJECT...
 const adventurer = {
-	name: "Timothy",
+	name: 'Timothy',
 	hitpoints: 10,
 	belongings: ["sword", "potion", "Tums"],
 	companion: {
 		name: "Velma",
-		type: "Bat"
+		type: "Bat",
+		companion: {
+			name: "Tim",
+			type: "Parasite"
+		}  
 	}
 }
 
-//Access the companion object:
-console.log(adventurer.companion);
-
-//Access the companion's name:
-console.log(adventurer.companion.name);
-
-//Access the companion's type:
-console.log(adventurer.companion.type)
+//What would you write to console.log Tim's type?
+console.log(adventurer.companion.companion.type);
