@@ -128,3 +128,4 @@ Have Timmy exercise twice.
 */
 
 //Instantiate a new Person named Timmy.
+const Timmy = 'Timmy';
