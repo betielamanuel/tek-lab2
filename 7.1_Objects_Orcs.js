@@ -508,6 +508,7 @@ class Enemy extends Adventurer {
 
 const orcs = new Enemy("Grommash Hellscream", 'Grom12345',['Man Swirdsnab', 'Tactical leader'] );
 console.log(orcs.challenge());
+
 //Access belongings
 //console.log(player1.belongings[0]); // Output: sword
 
