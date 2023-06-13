@@ -51,7 +51,7 @@ For the Pirate class:
 When trying to think of properties and methods, remember that our classes are nouns, their properties are like adjectives, and their methods are like verbs.
 */
 
-class Pirate{
+class Pirate {
    // Create three properties that are set by the constructor.
     constructor(name, weapon, shipName){
         this.name = name;
@@ -75,14 +75,14 @@ class Pirate{
 
 //Instantiate two arrays of three pirates, name the arrays after your favorite pirate ships: jollyRoger and blackPearl.
 
-const pirate1 = new Pirate("Captain Jack Sparrow", "sword and pistol", "Black Pearl");
-const pirate2 = new Pirate("Long John Silver", "cutlass and pistol", "Hispaniola");
-const pirate3 = new Pirate("Barbossa", "sword and pistol", "Queen Ann's Revenge");
+// const pirate1 = new Pirate("Captain Jack Sparrow", "sword and pistol", "Black Pearl");
+// const pirate2 = new Pirate("Long John Silver", "cutlass and pistol", "Hispaniola");
+// const pirate3 = new Pirate("Barbossa", "sword and pistol", "Queen Ann's Revenge");
 
 const jollyRoger = ["Captain Jack Sparrow", "Long John Silver", "Barbossa"]
 const blackPearl = ["Captain Readbeard", "Captain black heart", "Captain Hook"]
 
 //Loop over each array and print three properties of each pirate.
-for (let i= 0; i < jollyRoger.concat.length; i++) {
-    
-}
+for (let i= 0; i < jollyRoger.length; i++) {
+    console.log(jollyRoger[i]);
+};
